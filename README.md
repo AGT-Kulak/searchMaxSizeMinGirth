@@ -28,6 +28,10 @@ The directory `resultGraphs` contains for each iteration of a down and an up run
 When unzipped, all contain graphs of large size obtained after performing an iteration of the up or down run, saved per order:
 `n<n>.g6` contains graphs (in graph6 format) of large size, girth at least 5 and order `<n>`.
 
+The graphs in these zipped files which improve upper bounds on $n(\lbrace r, m\rbrace ; 5)$ (= the minimum order of a graph of degree set
+$$\lbrace r,m\rbrace$$, with $$r < m$$, and girth $$5$$) are additionally stored in `biregular.zip`. When unzipped, the 
+file `r<r>_m<m>_g5_n<n>.g6` stores the found graphs with degree set \{ `<r>`,`<m>` \}, girth 5 and order `<n>`.
+
 
 ## Code
 
