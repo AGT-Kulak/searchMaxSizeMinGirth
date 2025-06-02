@@ -35,8 +35,10 @@ file `r<r>_m<m>_g5_n<n>.g6` stores the found graphs with degree set \{ `<r>`,`<m
 
 ## Code
 
-There exists the local search algorithm, implemented in `searchMaxSizeMinGirth.c` and the "up run" and "down run" encompassing part in
-`upRun.py` and `downRun.py`, respectively.
+
+The core local search algorithm is implemented in `searchMaxSizeMinGirth.c`. This algorithm searches for graphs of a given order, given minimum girth and large size.
+On top of that, we have two Python scripts (`upRun.py` and `downRun.py`) that
+perform the local search on the range of orders $\{50, \ldots, 203\}$, using graphs of one order less or more as start graph.
 
 These code files make use of other code available at
 - `lib/nauty` contains some files from the [nauty](https://pallini.di.uniroma1.it/) library version 2.8.9,
